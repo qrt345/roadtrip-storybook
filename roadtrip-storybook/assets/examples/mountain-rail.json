@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "id": "demo-mountain-rail",
+  "title": "山城短行 · 无宠物示例",
+  "brand": "慢游日记",
+  "edition": "一天 · 铁路与步行 · 虚构示例",
+  "snapshot": "模板演示 v1",
+  "source_note": "以下为无宠物、非自驾的虚构示例，不提供真实时刻、票价和准入判断。",
+  "theme": {
+    "accent": "#3d7568"
+  },
+  "pages": [
+    {
+      "id": "cover",
+      "name": "坐火车去山城",
+      "chapter": "一天短行",
+      "cover": true,
+      "title": [
+        "搭一段火车，",
+        "走一段山路。"
+      ],
+      "accent_line": 1,
+      "lead": "这本示例只有三页，包含铁路和步行。\n没有犬只、酒店连住和充电安排。",
+      "metrics": [
+        {
+          "value": "1",
+          "unit": "天",
+          "label": "虚构示例"
+        },
+        {
+          "value": "3",
+          "unit": "人",
+          "label": "无宠物同行"
+        }
+      ],
+      "map": {
+        "title": "铁路 → 步行 / 交通方式分别展示",
+        "nodes": [
+          {
+            "id": "station",
+            "label": "山前车站",
+            "icon": "flag",
+            "detail": "虚构地点",
+            "page": "day"
+          },
+          {
+            "id": "town",
+            "label": "山城街巷",
+            "icon": "house",
+            "detail": ""
+          },
+          {
+            "id": "ridge",
+            "label": "观景步道",
+            "icon": "mountain",
+            "detail": ""
+          }
+        ],
+        "legs": [
+          {
+            "from": "station",
+            "to": "town",
+            "mode": "train"
+          },
+          {
+            "from": "town",
+            "to": "ridge",
+            "mode": "walk"
+          }
+        ],
+        "finish": "虚构示例 · 方位、道路和比例仅作展示"
+      }
+    },
+    {
+      "id": "day",
+      "name": "从站台到山间",
+      "chapter": "当天安排",
+      "title": [
+        "从站台出发，",
+        "把脚步放慢。"
+      ],
+      "accent_line": 1,
+      "sections": [
+        {
+          "title": "上午乘车",
+          "status": "planned",
+          "body": "车次和票价尚未提供，真实使用时另行确认。"
+        },
+        {
+          "title": "午后步行",
+          "status": "pending",
+          "body": "仅在确认开放的步道活动；步行距离、台阶与天气须核对。"
+        },
+        {
+          "title": "返程时间留余量",
+          "status": "planned",
+          "body": "以实际车票和当地交通为准。"
+        }
+      ],
+      "map": {
+        "title": "去程与返程",
+        "nodes": [
+          {
+            "id": "station",
+            "label": "山前车站",
+            "icon": "flag",
+            "detail": ""
+          },
+          {
+            "id": "town",
+            "label": "山城街巷",
+            "icon": "house",
+            "detail": ""
+          },
+          {
+            "id": "ridge",
+            "label": "观景步道",
+            "icon": "mountain",
+            "detail": ""
+          }
+        ],
+        "legs": [
+          {
+            "from": "station",
+            "to": "town",
+            "mode": "train"
+          },
+          {
+            "from": "town",
+            "to": "ridge",
+            "mode": "walk"
+          },
+          {
+            "from": "ridge",
+            "to": "town",
+            "mode": "walk"
+          },
+          {
+            "from": "town",
+            "to": "station",
+            "mode": "train"
+          }
+        ],
+        "finish": "虚构示例 · 方位、道路和比例仅作展示"
+      }
+    },
+    {
+      "id": "checklist",
+      "name": "轻装出发",
+      "chapter": "随身清单",
+      "title": "轻装，也准备周全。",
+      "checklist": [
+        {
+          "id": "ticket",
+          "label": "核对实际车次、出发站和回程时间。"
+        },
+        {
+          "id": "weather",
+          "label": "确认天气、步道开放与适合体力。"
+        },
+        {
+          "id": "water",
+          "label": "准备饮水、雨具和防滑鞋。"
+        }
+      ],
+      "map": {
+        "title": "返回出发站",
+        "nodes": [
+          {
+            "id": "town",
+            "label": "山城街巷",
+            "icon": "house",
+            "detail": ""
+          },
+          {
+            "id": "station",
+            "label": "山前车站",
+            "icon": "flag",
+            "detail": ""
+          }
+        ],
+        "legs": [
+          {
+            "from": "town",
+            "to": "station",
+            "mode": "train"
+          }
+        ],
+        "finish": "虚构示例 · 方位、道路和比例仅作展示"
+      }
+    }
+  ]
+}

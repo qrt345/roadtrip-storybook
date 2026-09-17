@@ -1,0 +1,11 @@
+{
+  "gsap_version": "3.15.0",
+  "gsap_license": "https://gsap.com/standard-license",
+  "spectrum_ui_reference": "https://github.com/arihantcodes/spectrum-ui/tree/6486859d722d2ae102dbb187d82056795cfac394",
+  "bundled_files": {
+    "gsap.min.js": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb",
+    "LICENSE-URL.txt": "e6cc06dbf4c15ca15f3424bfc3fd2430a310f3dfa26702953143d792daa85b62",
+    "MotionPathPlugin.min.js": "ace44a07c6c179f5347d9b46a152d468e4c9f272ee0d68bf0354e00d60000693",
+    "SPECTRUM-LICENSE.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  }
+}

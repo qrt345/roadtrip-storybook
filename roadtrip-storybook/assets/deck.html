@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="__PAPER__"><meta name="source-sha256" content="__SOURCE_HASH__">
+<title>__TITLE__</title><style>/*__CSS__*/</style>
+</head>
+<body>
+<div class="paper-grain" aria-hidden="true"></div>
+<div id="app" class="app">
+  <header class="topbar">
+    <a href="#1" class="brand" aria-label="回到旅行封面"><span class="brand-mark" aria-hidden="true">↝</span><span>__BRAND__<small>ON THE ROAD · TRAVEL BOOK</small></span></a>
+    <div class="edition">__EDITION__</div>
+    <div class="header-tools"><button id="motion-toggle" aria-pressed="false">动效 <span>开</span></button><button id="source-open" aria-label="完整资料">完整资料 <span aria-hidden="true">↗</span></button><button id="contents-open" class="menu-button" aria-label="打开目录">☰ 目录</button></div>
+  </header>
+  <main id="stage" class="stage" aria-label="旅行幻灯片"><article id="story" class="story" aria-labelledby="slide-title"></article>
+    <section class="map-panel" aria-label="手绘行程地图"><div class="map-heading"><span id="map-kicker"></span><span class="map-edition"></span></div><div class="map-canvas" id="map-canvas"></div>
+    <div class="map-bottom"><div class="map-now"><span class="live-dot" aria-hidden="true"></span><span id="route-status" aria-live="polite"></span></div><div class="map-actions"><button id="route-pause" aria-label="暂停路线动画" disabled>Ⅱ</button><button id="route-replay">↻ 走一遍</button></div></div>
+    <p class="map-disclaimer">行程棋盘 · 方位、道路与比例为示意，请以实际导航为准</p></section>
+  </main>
+  <footer class="footer"><div class="page-count"><strong id="current-page"></strong><span id="total-pages"></span><span id="chapter-name"></span></div><nav id="chapter-nav" aria-label="按章节跳转"></nav><div class="page-arrows"><span class="keyboard-hint">← → 翻页</span><button id="prev" aria-label="上一页">←</button><button id="next" aria-label="下一页">→</button></div><div class="book-progress" aria-hidden="true"><span id="book-progress"></span></div></footer>
+</div>
+<dialog id="contents-dialog" class="drawer" aria-labelledby="contents-title"><div class="drawer-head"><div><p class="eyebrow">TRIP INDEX</p><h2 id="contents-title">翻到想去的那一站</h2></div><button class="dialog-close" aria-label="关闭目录">×</button></div><nav id="contents-list" aria-label="全部页面"></nav><p class="drawer-note">左右键 / Page Up、Page Down 翻页 · Home、End 到首末页 · 手机上可左右轻扫</p></dialog>
+<dialog id="source-dialog" class="source-dialog" aria-labelledby="source-title"><div class="drawer-head"><div><p class="eyebrow">THE SOURCE NOTES</p><h2 id="source-title">完整资料与来源</h2></div><button class="dialog-close" aria-label="关闭完整资料">×</button></div><div class="source-meta">__SOURCE_NOTE__</div><div class="source-body">__SOURCE_HTML__</div>
+<details class="credits"><summary>制作与开源说明</summary><p>GSAP 3.15.0与MotionPathPlugin遵循 <a href="https://gsap.com/standard-license" target="_blank" rel="noopener">GSAP标准许可证</a>，源代码版权头已保留。抽屉交互参考Spectrum UI，采用原生dialog与GSAP实现，不依赖其React运行时。</p><pre>__SPECTRUM_LICENSE__</pre><p>手绘地图和插画为叙事示意，不代表真实道路、距离比例或景区实景。资料中的确认状态和参考日期以其标注为准。</p></details></dialog>
+<noscript><p class="no-js">启用JavaScript后可查看翻页手账。原始行程仍是旅行安排的依据。</p></noscript>
+<script id="trip-data" type="application/json">__DATA__</script>
+<script>/*__GSAP__*/</script><script>/*__MOTIONPATH__*/</script><script>/*__ILLUSTRATIONS__*/</script><script>/*__APP__*/</script>
+</body></html>

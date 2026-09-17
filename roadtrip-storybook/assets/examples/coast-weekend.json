@@ -1,0 +1,467 @@
+{
+  "version": 1,
+  "id": "demo-coast-weekend",
+  "title": "海风慢行 · 虚构示例",
+  "brand": "一路有你",
+  "edition": "两日旅行 · 纯虚构示例",
+  "snapshot": "模板演示 v1",
+  "source_md": "coast-source.md",
+  "source_note": "地名、人数和安排都是虚构数据，仅展示模板能力，未核验任何真实旅游政策。",
+  "pages": [
+    {
+      "id": "cover",
+      "name": "把日子交给海风",
+      "chapter": "总览",
+      "cover": true,
+      "eyebrow": "A SLOW WEEKEND / FICTIONAL DEMO",
+      "title": [
+        "把日子，",
+        "慢慢开进",
+        "海风里。"
+      ],
+      "accent_line": 2,
+      "lead": "一份两日携犬自驾的版式示例。\n地点与安排均为虚构，换成你的行程即可。",
+      "metrics": [
+        {
+          "value": "2",
+          "unit": "天",
+          "label": "示例天数"
+        },
+        {
+          "value": "2",
+          "unit": "人 · 1车",
+          "label": "按每份资料替换"
+        },
+        {
+          "value": "1",
+          "unit": "犬",
+          "label": "不是固定人数模板"
+        }
+      ],
+      "companions": [
+        {
+          "label": "同行小狗",
+          "icon": "dog"
+        }
+      ],
+      "foot": "这是模板演示，不是可执行的旅行推荐。",
+      "map": {
+        "title": "我们的海岸周末",
+        "nodes": [
+          {
+            "id": "city",
+            "label": "城东集合",
+            "icon": "flag",
+            "detail": "虚构地点",
+            "page": "depart"
+          },
+          {
+            "id": "coast",
+            "label": "海岸步道",
+            "icon": "sun",
+            "detail": "准入待核实",
+            "page": "choose"
+          },
+          {
+            "id": "inn",
+            "label": "港湾小屋",
+            "icon": "house",
+            "detail": "示例住宿",
+            "page": "return"
+          },
+          {
+            "id": "square",
+            "label": "海风广场",
+            "icon": "cup",
+            "detail": "示例休息点"
+          }
+        ],
+        "legs": [
+          {
+            "from": "city",
+            "to": "coast",
+            "mode": "car"
+          },
+          {
+            "from": "coast",
+            "to": "inn",
+            "mode": "car"
+          },
+          {
+            "from": "inn",
+            "to": "square",
+            "mode": "car"
+          },
+          {
+            "from": "square",
+            "to": "city",
+            "mode": "car"
+          }
+        ],
+        "finish": "虚构示例 · 方位、道路和比例仅作展示"
+      }
+    },
+    {
+      "id": "depart",
+      "name": "慢慢开向海边",
+      "chapter": "第一天",
+      "eyebrow": "DAY 01 / ON THE ROAD",
+      "title": [
+        "接上同伴，",
+        "去吹海风。"
+      ],
+      "accent_line": 1,
+      "lead": "示例行程把驾驶、休息和抵达分开安排。",
+      "sections": [
+        {
+          "time": "上午 · 时刻未定",
+          "title": "在城东集合",
+          "status": "planned",
+          "body": "确认会合点后，再倒排各自出门时间。"
+        },
+        {
+          "time": "途中",
+          "title": "休息与补能合并",
+          "status": "pending",
+          "body": "车型、续航和补能位置按真实资料填写，不用示例数字代替。"
+        },
+        {
+          "time": "抵达后",
+          "title": "港湾小屋办理入住",
+          "status": "booked",
+          "body": "示例只确认住宿预订。餐饮区域是否可携犬，仍单独待确认。"
+        }
+      ],
+      "note": "实际车程和宠物准入未核实，示例不提供路线承诺。",
+      "map": {
+        "title": "第一天 / 集合 → 休息 → 入住",
+        "nodes": [
+          {
+            "id": "city",
+            "label": "城东集合",
+            "icon": "flag",
+            "detail": ""
+          },
+          {
+            "id": "rest",
+            "label": "中途休息",
+            "icon": "charge",
+            "detail": ""
+          },
+          {
+            "id": "inn",
+            "label": "港湾小屋",
+            "icon": "house",
+            "detail": ""
+          }
+        ],
+        "legs": [
+          {
+            "from": "city",
+            "to": "rest",
+            "mode": "car"
+          },
+          {
+            "from": "rest",
+            "to": "inn",
+            "mode": "car"
+          }
+        ],
+        "finish": "虚构示例 · 方位、道路和比例仅作展示"
+      }
+    },
+    {
+      "id": "choose",
+      "name": "下午选一种节奏",
+      "chapter": "第一天",
+      "eyebrow": "ONE AFTERNOON / YOUR CHOICE",
+      "title": [
+        "沿海走走，",
+        "或好好休息。"
+      ],
+      "accent_line": 1,
+      "lead": "两个方案任选一个，不把备选变成必去清单。",
+      "choices": [
+        {
+          "id": "walk",
+          "label": "步道散步",
+          "sections": [
+            {
+              "title": "只走开放路段",
+              "status": "pending",
+              "body": "入园与携犬要求尚未核实；实际安排以当天条件为准。"
+            }
+          ],
+          "note": "这是示例备选，不代表已经决定。",
+          "map": {
+            "title": "步道备选 / 步行标记",
+            "nodes": [
+              {
+                "id": "inn",
+                "label": "港湾小屋",
+                "icon": "house",
+                "detail": ""
+              },
+              {
+                "id": "coast",
+                "label": "海岸步道",
+                "icon": "sun",
+                "detail": ""
+              }
+            ],
+            "legs": [
+              {
+                "from": "inn",
+                "to": "coast",
+                "mode": "walk"
+              }
+            ],
+            "finish": "虚构示例 · 方位、道路和比例仅作展示"
+          }
+        },
+        {
+          "id": "rest",
+          "label": "小屋休息",
+          "sections": [
+            {
+              "title": "不新增驾驶",
+              "status": "planned",
+              "body": "把时间留给休息，清点次日随身物品。"
+            }
+          ],
+          "map": {
+            "title": "休息备选 / 今天不再出发",
+            "nodes": [
+              {
+                "id": "inn",
+                "label": "港湾小屋",
+                "icon": "house",
+                "detail": ""
+              }
+            ],
+            "legs": [],
+            "finish": "虚构示例 · 方位、道路和比例仅作展示"
+          }
+        }
+      ],
+      "map": {
+        "title": "我们的海岸周末",
+        "nodes": [
+          {
+            "id": "city",
+            "label": "城东集合",
+            "icon": "flag",
+            "detail": "虚构地点",
+            "page": "depart"
+          },
+          {
+            "id": "coast",
+            "label": "海岸步道",
+            "icon": "sun",
+            "detail": "准入待核实",
+            "page": "choose"
+          },
+          {
+            "id": "inn",
+            "label": "港湾小屋",
+            "icon": "house",
+            "detail": "示例住宿",
+            "page": "return"
+          },
+          {
+            "id": "square",
+            "label": "海风广场",
+            "icon": "cup",
+            "detail": "示例休息点"
+          }
+        ],
+        "legs": [
+          {
+            "from": "city",
+            "to": "coast",
+            "mode": "car"
+          },
+          {
+            "from": "coast",
+            "to": "inn",
+            "mode": "car"
+          },
+          {
+            "from": "inn",
+            "to": "square",
+            "mode": "car"
+          },
+          {
+            "from": "square",
+            "to": "city",
+            "mode": "car"
+          }
+        ],
+        "finish": "虚构示例 · 方位、道路和比例仅作展示"
+      },
+      "foot": "同一页切换路线，不修改原行程。"
+    },
+    {
+      "id": "return",
+      "name": "带着海风回家",
+      "chapter": "第二天",
+      "eyebrow": "DAY 02 / HOMEWARD",
+      "title": [
+        "吃好早餐，",
+        "再慢慢回家。"
+      ],
+      "accent_line": 1,
+      "lead": "展示返程和餐食状态；不要从住宿预订推定包含早餐。",
+      "table": {
+        "headers": [
+          "餐次",
+          "状态"
+        ],
+        "rows": [
+          [
+            "早餐",
+            "未安排"
+          ],
+          [
+            "午餐",
+            "途中预留时间"
+          ],
+          [
+            "晚餐",
+            "未安排"
+          ]
+        ]
+      },
+      "sections": [
+        {
+          "title": "退房后返回集合片区",
+          "status": "planned",
+          "body": "休息点、驾车里程和出发钟点按实际路线补齐。"
+        }
+      ],
+      "map": {
+        "title": "第二天 / 小屋 → 途中休息 → 回家",
+        "nodes": [
+          {
+            "id": "inn",
+            "label": "港湾小屋",
+            "icon": "house",
+            "detail": ""
+          },
+          {
+            "id": "square",
+            "label": "海风广场",
+            "icon": "cup",
+            "detail": ""
+          },
+          {
+            "id": "city",
+            "label": "城东集合",
+            "icon": "flag",
+            "detail": ""
+          }
+        ],
+        "legs": [
+          {
+            "from": "inn",
+            "to": "square",
+            "mode": "car"
+          },
+          {
+            "from": "square",
+            "to": "city",
+            "mode": "car"
+          }
+        ],
+        "finish": "虚构示例 · 方位、道路和比例仅作展示"
+      },
+      "foot": "示例返程不增加其他景区。"
+    },
+    {
+      "id": "checklist",
+      "name": "出发前，再看一眼",
+      "chapter": "行前清单",
+      "eyebrow": "BEFORE WE GO",
+      "title": [
+        "装好行李，",
+        "准备出发。"
+      ],
+      "accent_line": 1,
+      "lead": "勾选仅记录当前浏览器中的个人准备进度。",
+      "checklist": [
+        {
+          "id": "booking",
+          "label": "核对入住、停车与餐饮区域的具体规则。"
+        },
+        {
+          "id": "route",
+          "label": "补齐实际路线、车辆续航与同向休息点。"
+        },
+        {
+          "id": "pet",
+          "label": "为同行宠物准备牵引、饮水和车内固定。"
+        },
+        {
+          "id": "weather",
+          "label": "出发前查看短期天气，决定是否启用备选。"
+        }
+      ],
+      "note": "不同旅行使用独立id，勾选状态互不混用。",
+      "map": {
+        "title": "我们的海岸周末",
+        "nodes": [
+          {
+            "id": "city",
+            "label": "城东集合",
+            "icon": "flag",
+            "detail": "虚构地点",
+            "page": "depart"
+          },
+          {
+            "id": "coast",
+            "label": "海岸步道",
+            "icon": "sun",
+            "detail": "准入待核实",
+            "page": "choose"
+          },
+          {
+            "id": "inn",
+            "label": "港湾小屋",
+            "icon": "house",
+            "detail": "示例住宿",
+            "page": "return"
+          },
+          {
+            "id": "square",
+            "label": "海风广场",
+            "icon": "cup",
+            "detail": "示例休息点"
+          }
+        ],
+        "legs": [
+          {
+            "from": "city",
+            "to": "coast",
+            "mode": "car"
+          },
+          {
+            "from": "coast",
+            "to": "inn",
+            "mode": "car"
+          },
+          {
+            "from": "inn",
+            "to": "square",
+            "mode": "car"
+          },
+          {
+            "from": "square",
+            "to": "city",
+            "mode": "car"
+          }
+        ],
+        "finish": "虚构示例 · 方位、道路和比例仅作展示"
+      }
+    }
+  ]
+}
